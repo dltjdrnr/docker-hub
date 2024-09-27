@@ -8,7 +8,7 @@ on:
     branches:
       - main
 env:
-  DOCKER_REPOSITORY: rnr1042/docker-repo
+  DOCKER_REPOSITORY: dltjdrnr/docker-repo
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
   DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 
@@ -36,7 +36,7 @@ jobs:
     - name: Repository checkout
       uses: actions/checkout@v2
       with:
-        repository: rnr1042/argocd-kube
+        repository: dltjdrnr/argocd-kube
         token: ${{ secrets.MY_GITHUB_TOKEN }}
 
     - name: Add date and push
